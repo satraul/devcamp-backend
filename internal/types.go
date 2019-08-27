@@ -26,11 +26,11 @@ type User struct {
 
 // Book struct for database query
 type Book struct {
-	ID     int    `json:"id"`
-	Title  string `json:"title"`
-	Author string `json:"author"`
-	ISBN   string `json:"isbn"`
-	Stock  int64  `json:"stock"`
+	ID     int     `json:"id"`
+	Title  *string `json:"title"`
+	Author *string `json:"author"`
+	ISBN   *string `json:"isbn"`
+	Stock  int64   `json:"stock"`
 }
 
 // LendRequest struct for receiving lend http request

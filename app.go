@@ -22,7 +22,7 @@ func initHandler(handler *internal.Handler) error {
 
 	// Initialize SQL DB
 	// NOTE: change localhost:5432 to postgres:5432 if you use docker
-	db, err := sql.Open("postgres", "postgres://postgres:postgres@localhost:5432/?sslmode=disable")
+	db, err := sql.Open("postgres", "postgres://postgres@172.32.4.208:5432/?sslmode=disable")
 	if err != nil {
 		return err
 	}
